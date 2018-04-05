@@ -2,6 +2,8 @@ My-1st-Test
 
 My-2rd-Test
 
+YYYYYYYYYYYY
+
 F2->寫入模式
 F3->監視模式
 Shift+F2->讀取模式
