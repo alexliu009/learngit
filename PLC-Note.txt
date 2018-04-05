@@ -1,0 +1,35 @@
+F2->寫入模式
+F3->監視模式
+Shift+F2->讀取模式
+Shift+F4->線上寫入
+
+SM : SP Relay(三菱定義)
+Z : SP Relay(自行定義)
+M : Bit
+ZR : Word
+B/W : PC/PLC Interface
+L : 斷電保持型Relay
+X : Input (實體)
+Y : Output (實體)
+D : Word
+
+選擇點位後按Ctrl+F -> 搜尋取代
+
+程式經過修改後要做轉換(Compile)
+
+更改監視模式時的點位值,選取點位後按Shift+Enter
+
+寫入模式(F2)下,選擇框為空心
+監視模式(F3)下,選擇框為實心
+
+
+(1)
+P1041->
+MOVP ZR27000 -> ????
+
+(2)
+FMOVP K0 K4B100 K6
+
+CSOT T2 50Pin 硬體PLC切到STOP
+XC0 -> Robot
+YE0 -> Macro
